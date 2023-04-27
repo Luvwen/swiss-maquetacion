@@ -4,7 +4,7 @@ import { Heading, Image, Stack } from '@chakra-ui/react';
 export const Featured = () => {
     return (
         <Stack alignItems='center' mt='50px' spacing={6}>
-            <Heading color='#606060'>Featured Products</Heading>
+            <Heading color='primary'>Featured Products</Heading>
             <Stack
                 alignItems='center'
                 direction='row'
@@ -18,12 +18,12 @@ export const Featured = () => {
                     width='923px'
                 >
                     <Image
-                        border='1px solid #606060'
+                        border='1px solid primary'
                         height='259px'
                         width='436px'
                     />
                     <Image
-                        border='1px solid #606060'
+                        border='1px solid primary'
                         height='259px'
                         width='436px'
                     />

@@ -5,7 +5,7 @@ import { ImageProduct } from './ImageProduct';
 export const ImagesGroup = () => {
     return (
         <Stack
-            color='#606060'
+            color='primary'
             direction='row'
             height='400px'
             justifyContent='center'
@@ -13,7 +13,7 @@ export const ImagesGroup = () => {
         >
             <Stack>
                 <Image
-                    border='1px solid #606060'
+                    border='1px solid primary'
                     height='303px'
                     width='273px'
                 />

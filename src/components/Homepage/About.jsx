@@ -8,11 +8,11 @@ export const About = () => {
             justifyContent='center'
             width='100vw'
         >
-            <Heading color='#606060' fontWeight='400'>
+            <Heading color='primary' fontWeight='400'>
                 About Your Shop
             </Heading>
             <Text
-                color='#606060'
+                color='primary'
                 fontSize='16px'
                 textAlign='center'
                 width='800px'

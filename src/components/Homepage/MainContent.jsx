@@ -11,34 +11,34 @@ export const MainContent = () => {
             spacing={12}
             width='100vw'
         >
-            <Heading as='h1' color='#606060'>
+            <Heading as='h1' color='primary'>
                 Tagline describing your e-shop
             </Heading>
             <Divider
-                border='1px solid #606060'
+                border='1px solid primary'
                 opacity='0.2'
                 orientation='horizontal'
                 width='200px'
             />
             <Stack direction='row' justifyContent='space-between' width='586px'>
                 <Image
-                    border='1px solid #606060'
+                    border='1px solid primary'
                     height='132px'
                     width='162px'
                 />
                 <Image
-                    border='1px solid #606060'
+                    border='1px solid primary'
                     height='132px'
                     width='162px'
                 />
                 <Image
-                    border='1px solid #606060'
+                    border='1px solid primary'
                     height='132px'
                     width='162px'
                 />
             </Stack>
             <Button
-                background='#606060'
+                background='primary'
                 color='white'
                 height='41px'
                 width='182px'
