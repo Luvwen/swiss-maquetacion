@@ -6,14 +6,13 @@ export const CompanyLogo = () => {
         <Stack
             alignItems='center'
             direction='row'
-            margin='0 auto'
-            mt='15px'
-            pl='70px'
-            spacing={2}
+            margin='15px auto'
+            pl={['20px', '20px', '0', '70px']}
+            spacing={[2, 2, 6, 2]}
             width='75vw'
         >
             <ChatIcon />
-            <Text>Your Company Name</Text>
+            <Text>Libremercado</Text>
         </Stack>
     );
 };

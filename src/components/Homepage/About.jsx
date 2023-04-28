@@ -6,21 +6,22 @@ export const About = () => {
             alignItems='center'
             as='article'
             justifyContent='center'
+            spacing={[0, 0, 5, 0]}
             width='100vw'
         >
             <Heading color='primary' fontWeight='400'>
-                About Your Shop
+                ¡Libremercado!
             </Heading>
             <Text
                 color='primary'
                 fontSize='16px'
+                maxWidth={['400px', '400px', '600px', '800px']}
                 textAlign='center'
                 width='800px'
             >
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                quae ab illo inventore veritatis et quasi architecto beatae
-                vitae dicta sunt explicabo.
+                Somos líderes en el mercado electrónico donde mas de 38 años de
+                experiencia nos avalan. Vení y probá la magía de conseguir lo
+                que mas querés!
             </Text>
         </Stack>
     );

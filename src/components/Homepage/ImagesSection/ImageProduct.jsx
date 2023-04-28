@@ -1,12 +1,27 @@
 import { StarIcon } from '@chakra-ui/icons';
 import { Image, Stack, Text } from '@chakra-ui/react';
 
-export const ImageProduct = () => {
+export const ImageProduct = ({ name, price, url }) => {
     return (
-        <Stack height='160px' pl='25px' spacing={1} width='271px'>
-            <Image border='1px solid primary' height='110px' width='271px' />
+        <Stack
+            cursor='pointer'
+            height='150px'
+            pl='25px'
+            spacing={1}
+            width='271px'
+        >
+            <Image
+                _hover={{
+                    padding: '10px',
+                    transition: '0.7s'
+                }}
+                height='110px'
+                padding='20px'
+                src={url}
+                width='271px'
+            />
             <Stack alignItems='center' direction='row'>
-                <Text minWidth='138px'>PRODUCT NAME</Text>
+                <Text minWidth='138px'>{name}</Text>
                 <Stack
                     direction='row'
                     justifyContent='space-between'
@@ -19,7 +34,7 @@ export const ImageProduct = () => {
                     <StarIcon fontSize='12px' />
                 </Stack>
             </Stack>
-            <Text>$300</Text>
+            <Text>{price}</Text>
         </Stack>
     );
 };

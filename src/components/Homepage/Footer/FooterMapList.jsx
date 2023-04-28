@@ -18,7 +18,7 @@ export const FooterMapList = () => {
         >
             {footerSections.map((section, idx) => (
                 <FooterList key={idx} sectionList={section[1]}>
-                    MAIN MENU
+                    {section[0]}
                 </FooterList>
             ))}
         </Stack>

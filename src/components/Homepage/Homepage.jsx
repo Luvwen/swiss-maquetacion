@@ -3,14 +3,14 @@ import { Navbar } from './Navbar';
 import { ImagesGroup } from './ImagesSection';
 import { Footer } from './Footer';
 import { MainContent } from './MainContent';
-import { Featured } from './Featured';
+import { Featured } from './Featured/Featured';
 import { Newsletter } from './Newsletter';
 import { About } from './About';
 import { CompanyLogo } from './CompanyLogo';
 
 export const Homepage = () => {
     return (
-        <Box>
+        <Box overflow='hidden'>
             <Navbar />
             <MainContent />
             <Divider
