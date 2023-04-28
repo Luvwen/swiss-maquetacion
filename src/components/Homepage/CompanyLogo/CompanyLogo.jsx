@@ -14,7 +14,19 @@ export const CompanyLogo = () => {
             spacing={[6, 2, 6, 2]}
             width='75vw'
         >
-            <Image height='25px' src={logo} width='25px' />
+            <Image
+                cursor='pointer'
+                height='25px'
+                onClick={() =>
+                    window.scrollTo({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    })
+                }
+                src={logo}
+                width='25px'
+            />
             <Heading as='h3' fontSize='1em'>
                 Libremercado
             </Heading>

@@ -20,12 +20,18 @@ export const Featured = () => {
                 width={['auto', 'auto', '500px', '500px']}
             >
                 <ArrowLeftIcon
+                    _hover={{
+                        color: 'hover'
+                    }}
                     color='primary'
                     cursor='pointer'
                     onClick={nextSlide}
                 />
                 <Carrousel slide={slide} />
                 <ArrowRightIcon
+                    _hover={{
+                        color: 'hover'
+                    }}
                     color='primary'
                     cursor='pointer'
                     onClick={nextSlide}

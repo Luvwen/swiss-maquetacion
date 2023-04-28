@@ -59,6 +59,9 @@ export const MainContent = () => {
                 />
             </Stack>
             <Button
+                _hover={{
+                    background: 'hover'
+                }}
                 background='primary'
                 color='white'
                 height='41px'

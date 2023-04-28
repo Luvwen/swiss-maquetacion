@@ -27,7 +27,19 @@ export const Footer = () => {
                 spacing={[12, 0, 0, 3]}
                 width={['100%', '100%', '70%', '15%']}
             >
-                <Image height='65px' src={logo} width='65px' />
+                <Image
+                    cursor='pointer'
+                    height='65px'
+                    onClick={() =>
+                        window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth'
+                        })
+                    }
+                    src={logo}
+                    width='65px'
+                />
                 <Divider
                     border='1px solid primary'
                     display={['none', 'none', 'none', 'block']}

@@ -42,7 +42,15 @@ export const Navbar = () => {
                 spacing={['6', '6', '6', '12', '12']}
             >
                 <Image
+                    cursor='pointer'
                     height={['20px', '20px', '20px', '25px', '35px']}
+                    onClick={() =>
+                        window.scrollTo({
+                            top: 0,
+                            left: 0,
+                            behavior: 'smooth'
+                        })
+                    }
                     src={logo}
                     width={['20px', '20px', '20px', '25px', '35px']}
                 />
