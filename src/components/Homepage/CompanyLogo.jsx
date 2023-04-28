@@ -8,7 +8,7 @@ export const CompanyLogo = () => {
             direction='row'
             margin='15px auto'
             pl={['20px', '20px', '0', '70px']}
-            spacing={[2, 2, 6, 2]}
+            spacing={[6, 2, 6, 2]}
             width='75vw'
         >
             <ChatIcon />

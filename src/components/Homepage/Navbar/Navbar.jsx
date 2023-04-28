@@ -1,4 +1,4 @@
-import { SearchIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons';
 import {
     Button,
     Icon,
@@ -18,33 +18,39 @@ export const Navbar = () => {
     return (
         <Stack
             as='header'
-            direction={[null, null, 'row', 'row', null]}
-            justifyContent={[null, null, 'space-evenly', 'space-evenly', null]}
-            mt={[null, null, '15px', '10px', null]}
+            direction={['row', 'row', 'row', 'row', 'row']}
+            justifyContent={[
+                'space-evenly',
+                'space-evenly',
+                'space-evenly',
+                'space-evenly',
+                null
+            ]}
+            mt={['15px', '15px', '15px', '10px', null]}
         >
             <Stack
-                alignItems={[null, null, 'center', 'center', null]}
+                alignItems={['center', 'center', 'center', 'center', 'center']}
                 as='nav'
-                direction={[null, null, 'row', 'row', null]}
+                direction={['row', 'row', 'row', 'row', 'row']}
                 justifyContent={[
-                    null,
-                    null,
+                    'space-around',
+                    'space-around',
                     'space-around',
                     'space-evenly',
-                    null
+                    'space-evenly'
                 ]}
-                spacing={[null, null, '6', '12', null]}
+                spacing={['6', '6', '6', '12', '12']}
             >
                 <Image
-                    height={[null, null, '20px', '25px', null]}
+                    height={['20px', '20px', '20px', '25px', '20px']}
                     src={logo}
-                    width={[null, null, '20px', '25px', null]}
+                    width={['20px', '20px', '20px', '25px', null]}
                 />
-                <InputGroup size={[null, null, 'sm', 'sm']}>
+                <InputGroup size={['sm', 'sm', 'sm', 'sm']}>
                     <InputLeftElement
                         children={<SearchIcon color='primary' />} //eslint-disable-line
-                        display={[null, null, 'block', null]}
-                        p={[null, null, '2px 7px', null]}
+                        display={['block', 'block', 'block', 'block']}
+                        p={['2px 7px', '2px 7px', '2px 7px', '2px 7px']}
                         pointerEvents='none'
                     />
                     <Input
@@ -55,11 +61,21 @@ export const Navbar = () => {
                     />
                 </InputGroup>
             </Stack>
-            <Stack direction='row' spacing={[null, null, '14', '6']}>
-                <ListItems />
+            <Stack direction='row' spacing={['2', '2', '14', '6']}>
+                <Stack display={['none', 'block', 'block', 'block', 'block']}>
+                    <ListItems />
+                </Stack>
+                <HamburgerIcon
+                    display={['block', 'none', 'none', 'none', 'none']}
+                    fontSize='2em'
+                />
                 <Button
-                    background='primary'
-                    color='white'
+                    _hover={{
+                        background: 'hover'
+                    }}
+                    background='button'
+                    color='secondary'
+                    display={['none', 'flex', 'flex', 'flex', 'flex']}
                     fontWeight='400'
                     height={'30px'}
                     leftIcon={<Icon as={shopCart} />}
@@ -67,6 +83,11 @@ export const Navbar = () => {
                 >
                     Your Cart
                 </Button>
+                <Icon
+                    as={shopCart}
+                    display={['block', 'none', 'none', 'none', 'none']}
+                    fontSize='2em'
+                />
             </Stack>
         </Stack>
     );

@@ -6,7 +6,7 @@ export const About = () => {
             alignItems='center'
             as='article'
             justifyContent='center'
-            spacing={[0, 0, 5, 0]}
+            spacing={[5, 5, 5, 0]}
             width='100vw'
         >
             <Heading color='primary' fontWeight='400'>
@@ -15,7 +15,7 @@ export const About = () => {
             <Text
                 color='primary'
                 fontSize='16px'
-                maxWidth={['400px', '400px', '600px', '800px']}
+                maxWidth={['300px', '400px', '600px', '800px']}
                 textAlign='center'
                 width='800px'
             >

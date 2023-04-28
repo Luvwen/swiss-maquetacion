@@ -19,11 +19,12 @@ export const Footer = () => {
                 alignItems={['center', 'center', 'center', 'flex-start']}
                 direction={['row', 'row', 'row', 'column']}
                 justifyContent={[
-                    'space-evenly',
-                    'space-evenly',
+                    'space-between',
+                    'space-between',
                     'space-between',
                     'flex-start'
                 ]}
+                spacing={[12, 0, 0, 3]}
                 width={['100%', '100%', '70%', '15%']}
             >
                 <Image height='65px' src={logo} width='65px' />

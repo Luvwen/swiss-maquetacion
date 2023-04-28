@@ -11,10 +11,12 @@ export const FooterMapList = () => {
     return (
         <Stack
             as='article'
-            direction='row'
-            justifyContent='space-evenly'
-            spacing={12}
-            width='600px'
+            direction={['row', 'row', 'row', 'row']}
+            gap={[12, 0, 0, 0]}
+            justifyContent='space-between'
+            spacing={[0, 0, 12, 12]}
+            width={['100%', '100%', '600px', '600px']}
+            wrap={['wrap', 'nowrap', 'nowrap', 'nowrap']}
         >
             {footerSections.map((section, idx) => (
                 <FooterList key={idx} sectionList={section[1]}>

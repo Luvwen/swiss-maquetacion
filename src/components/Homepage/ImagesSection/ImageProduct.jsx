@@ -6,7 +6,7 @@ export const ImageProduct = ({ name, price, url }) => {
         <Stack
             cursor='pointer'
             height='150px'
-            pl='25px'
+            pl={[0, 0, '25px', '25px']}
             spacing={1}
             width='271px'
         >

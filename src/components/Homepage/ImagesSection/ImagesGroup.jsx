@@ -6,7 +6,7 @@ export const ImagesGroup = () => {
     return (
         <Stack
             color='primary'
-            direction={['row', 'row', 'column', 'row']}
+            direction={['column', 'row', 'column', 'row']}
             justifyContent={['center']}
             minHeight={['800px', '800px', '800px', '400px']}
             spacing={[12]}
@@ -19,10 +19,10 @@ export const ImagesGroup = () => {
                     }}
                     borderRadius='35px'
                     cursor='pointer'
-                    height={['150px', '200px', '300px', '400px']}
+                    height={['250px', '200px', '300px', '400px']}
                     padding='25px'
                     src='https://i.blogs.es/885597/ps5apfinal/450_1000.jpg'
-                    width='350px'
+                    width={['250px', '175px', '350px', '350px']}
                 />
                 <Stack
                     alignItems='center'
@@ -33,7 +33,7 @@ export const ImagesGroup = () => {
                         'space-around',
                         'space-around'
                     ]}
-                    width={['100%', '100%', '50%', '100%']}
+                    width={['75%', '100%', '50%', '100%']}
                 >
                     <Text>Play Station 5</Text>
                     <Stack direction='row'>
@@ -45,8 +45,8 @@ export const ImagesGroup = () => {
                     </Stack>
                 </Stack>
                 <Text
-                    pl={[0, 0, '38px', '32px']}
-                    width={['100%', '100%', '50%', '100%']}
+                    pl={['10px', 0, '38px', '32px']}
+                    width={['70%', '100%', '50%', '100%']}
                 >
                     $799
                 </Text>
@@ -54,9 +54,9 @@ export const ImagesGroup = () => {
             <Stack
                 direction='row'
                 flexWrap='wrap'
-                gap={[0, 0, 10, 0]}
+                gap={[10, 0, 10, 0]}
                 justifyContent={[
-                    'flex-start',
+                    'center',
                     'flex-start',
                     'space-evenly',
                     'flex-start'
