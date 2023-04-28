@@ -1,14 +1,14 @@
 import { Divider, Image, Stack, Text } from '@chakra-ui/react';
 import { FooterMapList } from './FooterMapList';
 
-import logo from '../../../assets/logo.jpg';
+import logo from '../../../assets/logo.png';
 
 export const Footer = () => {
     return (
         <Stack
             alignItems='center'
             as='footer'
-            color='primary'
+            color='text'
             direction={['column', 'column', 'column', 'row']}
             justifyContent='space-around'
             margin='0 auto'

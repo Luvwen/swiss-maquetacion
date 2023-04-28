@@ -7,8 +7,8 @@ export const MainContent = () => {
             as='section'
             height='500px'
             justifyContent='center'
-            mt='50px'
-            spacing={12}
+            mt={['25px', '50px', '50px', '50px']}
+            spacing={4}
             width='100vw'
         >
             <Heading as='h1' color='primary'>

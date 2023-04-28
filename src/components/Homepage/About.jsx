@@ -6,14 +6,14 @@ export const About = () => {
             alignItems='center'
             as='article'
             justifyContent='center'
-            spacing={[5, 5, 5, 0]}
+            spacing={[5, 5, 5, 3]}
             width='100vw'
         >
             <Heading color='primary' fontWeight='400'>
                 ¡Libremercado!
             </Heading>
             <Text
-                color='primary'
+                color='text'
                 fontSize='16px'
                 maxWidth={['300px', '400px', '600px', '800px']}
                 textAlign='center'

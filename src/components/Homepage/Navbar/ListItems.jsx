@@ -19,12 +19,12 @@ export const ListItems = () => {
                     <ListItem
                         _hover={{
                             background: 'hover',
-                            transition: '0.8s',
+                            transition: '0.2s',
                             color: 'secondary'
                         }}
-                        borderRadius='10px'
+                        borderRadius='6px'
                         cursor='pointer'
-                        padding={[null, null, '3px 12px', '6px 25px']}
+                        padding={[null, null, '3px 12px', '6px 20px']}
                     >
                         {section}
                     </ListItem>
@@ -32,8 +32,8 @@ export const ListItems = () => {
                         <Divider
                             borderColor='primary'
                             borderWidth='1px'
-                            height='15px'
-                            opacity='0.2'
+                            height='25px'
+                            opacity='0.7'
                             orientation='vertical'
                         />
                     )}

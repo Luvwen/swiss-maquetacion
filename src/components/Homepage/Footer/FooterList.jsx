@@ -7,7 +7,7 @@ export const FooterList = ({ children, sectionList }) => {
             minWidth={['105px']}
             spacing={[3, 3, 6, 6]}
         >
-            <Heading as='h5' fontSize='16px' fontWeight='300'>
+            <Heading as='h5' color='primary' fontSize='16px' fontWeight='300'>
                 {children}
             </Heading>
             <Stack spacing={2}>

@@ -19,9 +19,17 @@ export const Featured = () => {
                 spacing={6}
                 width={['auto', 'auto', '500px', '500px']}
             >
-                <ArrowLeftIcon cursor='pointer' onClick={nextSlide} />
+                <ArrowLeftIcon
+                    color='primary'
+                    cursor='pointer'
+                    onClick={nextSlide}
+                />
                 <Carrousel slide={slide} />
-                <ArrowRightIcon cursor='pointer' onClick={nextSlide} />
+                <ArrowRightIcon
+                    color='primary'
+                    cursor='pointer'
+                    onClick={nextSlide}
+                />
             </Stack>
         </Stack>
     );

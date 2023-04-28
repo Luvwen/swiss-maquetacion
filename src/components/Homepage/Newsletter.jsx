@@ -15,23 +15,18 @@ export const Newsletter = () => {
                 Newsletter
             </Heading>
             <Stack
-                alignItems={[
-                    'center',
-                    'flex-start',
-                    'flex-start',
-                    'flex-start'
-                ]}
+                alignItems={['center', 'flex-start', 'center', 'flex-start']}
                 direction={['column', 'column', 'column', 'row']}
                 justifyContent={[
                     'center',
                     'flex-start',
-                    'flex-start',
+                    'center',
                     'flex-start'
                 ]}
                 spacing={12}
             >
                 <Text
-                    color='primary'
+                    color='text'
                     maxWidth={['80%', '100%', '100%', '100%']}
                     width={['500px', '500px', '500px', '435px']}
                 >
@@ -49,8 +44,18 @@ export const Newsletter = () => {
                     direction={['column', 'column', 'row', 'row']}
                     spacing={2}
                 >
-                    <Input placeholder='Email Address' width={'275px'} />
-                    <Button background='gray' color='white' width='145px'>
+                    <Input
+                        _placeholder={{ color: 'input' }}
+                        focusBorderColor='primary'
+                        placeholder='Email Address'
+                        width={'275px'}
+                    />
+                    <Button
+                        _hover={{ background: 'hover', color: 'secondary' }}
+                        background='primary'
+                        color='white'
+                        width='145px'
+                    >
                         Subscribe
                     </Button>
                 </Stack>

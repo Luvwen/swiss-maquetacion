@@ -23,6 +23,7 @@ export const ImageProduct = ({ name, price, url }) => {
             <Stack alignItems='center' direction='row'>
                 <Text minWidth='138px'>{name}</Text>
                 <Stack
+                    color='primary'
                     direction='row'
                     justifyContent='space-between'
                     maxWidth='90px'
@@ -34,7 +35,7 @@ export const ImageProduct = ({ name, price, url }) => {
                     <StarIcon fontSize='12px' />
                 </Stack>
             </Stack>
-            <Text>{price}</Text>
+            <Text color='primary'>{price}</Text>
         </Stack>
     );
 };

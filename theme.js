@@ -6,9 +6,11 @@ const theme = extendTheme({
         body: `'Source Sans Pro', sans-serif` //eslint-disable-line
     },
     colors: {
-        primary: '#606060',
-        secondary: '#ffffff',
-        hover: '#21232a'
+        primary: '#F97316',
+        secondary: '#FFFFFF',
+        hover: '#0591AF',
+        text: '#1A202C',
+        input: '#718096'
     }
 });
 

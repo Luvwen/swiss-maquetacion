@@ -5,7 +5,7 @@ import { ImageProduct } from './ImageProduct';
 export const ImagesGroup = () => {
     return (
         <Stack
-            color='primary'
+            color='text'
             direction={['column', 'row', 'column', 'row']}
             justifyContent={['center']}
             minHeight={['800px', '800px', '800px', '400px']}
@@ -36,7 +36,7 @@ export const ImagesGroup = () => {
                     width={['75%', '100%', '50%', '100%']}
                 >
                     <Text>Play Station 5</Text>
-                    <Stack direction='row'>
+                    <Stack color='primary' direction='row'>
                         <StarIcon />
                         <StarIcon />
                         <StarIcon />
@@ -45,6 +45,7 @@ export const ImagesGroup = () => {
                     </Stack>
                 </Stack>
                 <Text
+                    color='primary'
                     pl={['10px', 0, '38px', '32px']}
                     width={['70%', '100%', '50%', '100%']}
                 >

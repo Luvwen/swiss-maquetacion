@@ -6,7 +6,7 @@ import { MainContent } from './MainContent';
 import { Featured } from './Featured/Featured';
 import { Newsletter } from './Newsletter';
 import { About } from './About';
-import { CompanyLogo } from './CompanyLogo';
+import { CompanyLogo } from './CompanyLogo/CompanyLogo';
 
 export const Homepage = () => {
     return (
